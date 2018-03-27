@@ -1,0 +1,78 @@
+scan complete in 3ms
+Connecting to jdbc:hive2://ec2-52-207-2-108.compute-1.amazonaws.com:10000/miti_db;principal=hive/ec2-52-207-2-108.compute-1.amazonaws.com@SOLRS.NET;
+Connected to: Apache Hive (version 1.1.0-cdh5.12.2)
+Driver: Hive JDBC (version 1.1.0-cdh5.12.2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+Beeline version 1.1.0-cdh5.12.2 by Apache Hive
+0: jdbc:hive2://ec2-52-207-2-108.compute-1.am> 
+0: jdbc:hive2://ec2-52-207-2-108.compute-1.am> show tables
+. . . . . . . . . . . . . . . . . . . . . . .> 
+. . . . . . . . . . . . . . . . . . . . . . .> INFO  : Compiling command(queryId=hive_20180309185656_fab265da-886f-4051-a634-bfbad99183d0): show tables
+INFO  : Semantic Analysis Completed
+INFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:tab_name, type:string, comment:from deserializer)], properties:null)
+INFO  : Completed compiling command(queryId=hive_20180309185656_fab265da-886f-4051-a634-bfbad99183d0); Time taken: 0.092 seconds
+INFO  : Executing command(queryId=hive_20180309185656_fab265da-886f-4051-a634-bfbad99183d0): show tables
+INFO  : Starting task [Stage-0:DDL] in serial mode
+INFO  : Completed executing command(queryId=hive_20180309185656_fab265da-886f-4051-a634-bfbad99183d0); Time taken: 0.197 seconds
+INFO  : OK
++-------------------------------------------------+--+
+|                    tab_name                     |
++-------------------------------------------------+--+
+| aircontrol_planedata_join_unixtimestamp         |
+| airport1_internal                               |
+| airport2_external                               |
+| airport_merged                                  |
+| airtraffic_controller_2006                      |
+| airtraffic_yearly_2005                          |
+| airtraffic_yearly_allyears                      |
+| airtraffic_yearly_external                      |
+| airtraffic_yearly_hbase_hive_2004               |
+| airtraffic_yearly_internal                      |
+| airtraffic_yearly_part_bucket_ext               |
+| airtraffic_yearly_part_bucket_int               |
+| airtraffic_yearly_part_bucket_int_remove2003    |
+| airtraffic_yearly_partitionedallyear            |
+| averagedailyuserinlast90days                    |
+| business                                        |
+| businessentityaddress                           |
+| cancelled_flights_hbase                         |
+| cancelled_flights_hive                          |
+| carriers_internal                               |
+| categories_exploded                             |
+| checkin                                         |
+| customer_and_suppliers_by_city                  |
+| department                                      |
+| employee                                        |
+| employee_status                                 |
+| inceraseinratingperyear                         |
+| join_unixtimestamp_hdfs                         |
+| numberofsubcategory                             |
+| order                                           |
+| order1                                          |
+| order_details                                   |
+| order_internal                                  |
+| origin_destionation                             |
+| plandata_avro                                   |
+| plane_data_avro                                 |
+| plane_data_cleansedbypig                        |
+| plane_data_external                             |
+| planedata_join_origin_dest                      |
+| planedata_join_origin_dest_unixtimestamp        |
+| planedata_join_origin_dest_unixtimestamp_hbase  |
+| product                                         |
+| productvendor                                   |
+| purchaseorderdetail                             |
+| review                                          |
+| salesorderdetail                                |
+| suppliers                                       |
+| tip                                             |
+| top10categories                                 |
+| top10reviewsineachstate                         |
+| top3reviewbyardene                              |
+| top3userinlast365day                            |
+| top50restaurantwithopenclosetime                |
+| user                                            |
+| vendor                                          |
++-------------------------------------------------+--+
+55 rows selected (0.424 seconds)
+0: jdbc:hive2://ec2-52-207-2-108.compute-1.am> Closing: 0: jdbc:hive2://ec2-52-207-2-108.compute-1.amazonaws.com:10000/miti_db;principal=hive/ec2-52-207-2-108.compute-1.amazonaws.com@SOLRS.NET;

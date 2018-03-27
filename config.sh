@@ -1,0 +1,10 @@
+export HOSTNAME="52.207.2.108"
+export USERNAME="temp"
+export PASS="temp"
+export HIVE_DB="miti_db"
+export DATABASE="AdventureWorks2014"
+export JDBC="jdbc"
+export MYSQL="mysql"
+export DIR_PATH="/user/miti/project_shellscript/sqoop_tables"
+export CSV_PATH="/user/miti/project_shellscript/alltables_csv"
+export TABLENAMES=("top10categories" "top10reviewsineachstate")

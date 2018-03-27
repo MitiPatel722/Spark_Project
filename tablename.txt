@@ -1,0 +1,8 @@
+Order_details
+ProductVendor
+SalesOrderDetail
+Product
+PurchaseOrderDetail
+Vendor
+BusinessEntityAddress
+Address
